@@ -1,26 +1,133 @@
+/*      ESTILO GERAL      */
+
 body {
-  font-family: Arial;
-  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  background: #eef7f1;
+  margin: 0;
+  padding: 20px;
+  color: #2f3e46;
 }
+
+h1, h2 {
+  color: #2d6a4f;
+  text-align: center;
+}
+
+/*          MAPA          */
 
 #map {
   width: 100%;
-  height: 400px;
-  margin-bottom: 20px;
+  height: 450px;
+  margin: 20px auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
 }
 
+/*    FORMULÁRIO (CARD)   */
+
 .form-container {
-  margin-bottom: 20px;
+  background: #ffffff;
+  width: 360px;
+  margin: 25px auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  border-left: 6px solid #52b788;
+}
+
+.form-container h2 {
+  margin-top: 0;
+  text-align: left;
 }
 
 input {
-  display: block;
-  margin: 5px 0;
-  padding: 5px;
-  width: 250px;
+  width: 92%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #b7d9c5;
+  background: #f7fffa;
+  transition: 0.3s;
 }
 
-button {
-  padding: 8px 12px;
+input:focus {
+  border-color: #52b788;
+  box-shadow: 0 0 5px rgba(82, 183, 136, 0.4);
+  outline: none;
+}
+
+/* Estilizar SELECT */
+select {
+  width: 92%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #b7d9c5;
+  background: #f7fffa;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: #2f3e46;
+  transition: 0.3s;
   cursor: pointer;
+}
+
+select:focus {
+  border-color: #52b788;
+  box-shadow: 0 0 5px rgba(82, 183, 136, 0.4);
+  outline: none;
+}
+
+/*        BOTÕES          */
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #40916c;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #2d6a4f;
+}
+
+/*         LISTA          */
+
+ul#lista {
+  list-style: none;
+  padding: 0;
+  max-width: 520px;
+  margin: 10px auto;
+}
+
+ul#lista li {
+  background: #ffffff;
+  color: #2d6a4f;
+  padding: 14px;
+  margin: 10px 0;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 6px solid #52b788;
+  font-weight: 600;
+}
+
+/* Botão remover ponto */
+ul#lista li button {
+  width: auto;
+  padding: 6px 12px;
+  background: #d62828;
+  border-radius: 7px;
+  font-size: 14px;
+}
+
+ul#lista li button:hover {
+  background: #b21f1f;
 }

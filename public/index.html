@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CRUD com Mapa - Pontos de Coleta</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- CSS Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+  <!-- JS Leaflet -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+
+  <h1>Mapa de Pontos de Coleta</h1>
+  <p>Clique no mapa para adicionar um ponto.</p>
+
+  <div id="map"></div>
+
+  <div class="form-container">
+    <h2>Cadastrar ponto</h2>
+    <p><strong>Coordenadas:</strong> <span id="coords">Nenhuma</span></p>
+
+    <input type="text" id="nome" placeholder="Nome do ponto">
+    <input type="text" id="tipo" placeholder="Tipo de resíduo">
+    <button id="btnSalvar">Salvar ponto</button>
+  </div>
+
+  <h2>Lista de Pontos</h2>
+  <ul id="lista"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>

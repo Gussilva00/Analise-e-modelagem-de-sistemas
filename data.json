@@ -1,0 +1,12 @@
+{
+  "pontos": [
+    {
+      "id": 4,
+      "nome": "rua da aurora",
+      "tipo": "plastico",
+      "lat": -8.05135302106942,
+      "lng": -34.87471997737885
+    }
+  ],
+  "nextId": 5
+}
